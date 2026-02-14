@@ -4,19 +4,19 @@ Telegram Bot Username: @sohil_safari_crypto_bot
 
 A simple Telegram bot that fetches real-time cryptocurrency prices from multiple Iranian exchanges and shows them in one response.
 
-🚀 What This Bot Does:
+🚀 What This Bot Does :
 
-You send a crypto symbol (like btc, eth, etc.) to the bot, and it:
+You send a crypto symbol (like btc, eth, etc.) to the bot, and it :
 Fetches live prices from multiple exchanges
 Collects the data concurrently using async requests
 Returns formatted prices in Toman
 Handles API errors gracefully
 
-Example:
+Example :
 
 btc
 
-Response:
+Response :
 قیمت لحظه‌ای BTC:
 
 نوبیتکس: 3,245,000,000 تومان
@@ -25,7 +25,7 @@ Response:
 اکسیر: 3,242,000,000 تومان
 والکس: 3,246,000,000 تومان
 
-🏦 Supported Exchanges:
+🏦 Supported Exchanges :
 
 Nobitex
 Ramzinex
@@ -35,14 +35,14 @@ Wallex
 
 Each exchange has its own symbol format, and the bot automatically converts the symbol correctly before sending the request.
 
-🛠 Tech Stack:
+🛠 Tech Stack :
 
 Python
 pyTelegramBotAPI (telebot)
 asyncio
 httpx (async HTTP requests)
 
-⚡ How It Works:
+⚡ How It Works :
 
 Uses asyncio.gather() to fetch all prices simultaneously
 Uses httpx.AsyncClient() for non-blocking API calls
@@ -50,20 +50,20 @@ Dynamically maps trading pair formats for each exchange
 Uses infinity_polling() for continuous bot operation
 The bot is designed to be lightweight and simple, while still demonstrating async programming and external API integration.
 
-▶️ How to Run:
+▶️ How to Run :
 
 Clone the repository
 
-Install dependencies:
+Install dependencies :
 pip install pyTelegramBotAPI httpx
 
-Replace the bot token:
+Replace the bot token :
 TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
 
-Run the script:
+Run the script :
 python bot.py
 
-🔐 Important Note:
+🔐 Important Note :
 
 Do not commit your real Telegram bot token.
 Use environment variables instead:
@@ -73,7 +73,7 @@ TOKEN = os.getenv("BOT_TOKEN")
 
 Then create a .env file locally and add it to .gitignore.
 
-💡 What I Practiced in This Project:
+💡 What I Practiced in This Project :
 
 Working with Telegram Bot API
 Handling multiple async API calls
@@ -81,7 +81,7 @@ Formatting financial data
 Basic error handling
 Working with external REST APIs
 
-📌 Future Improvements
+📌 Future Improvements :
 
 Add inline keyboard buttons
 Add caching system to reduce API calls
