@@ -7,14 +7,14 @@ A simple Telegram bot that fetches real-time cryptocurrency prices from multiple
 🚀 What This Bot Does :
 
 You send a crypto symbol (like btc, eth, etc.) to the bot, and it :
-Fetches live prices from multiple exchanges
-Collects the data concurrently using async requests
-Returns formatted prices in Toman
+Fetches live prices from multiple exchanges, 
+Collects the data concurrently using async requests, 
+Returns formatted prices in Toman, 
 Handles API errors gracefully
 
 Example :
 
-btc
+"btc"
 
 Response :
 
@@ -37,17 +37,17 @@ Each exchange has its own symbol format, and the bot automatically converts the 
 
 🛠 Tech Stack :
 
-Python
-pyTelegramBotAPI (telebot)
-asyncio
-httpx (async HTTP requests)
+Python, 
+pyTelegramBotAPI (telebot), 
+asyncio, 
+httpx (async HTTP requests), 
 
 ⚡ How It Works :
 
-Uses asyncio.gather() to fetch all prices simultaneously
-Uses httpx.AsyncClient() for non-blocking API calls
-Dynamically maps trading pair formats for each exchange
-Uses infinity_polling() for continuous bot operation
+Uses asyncio.gather() to fetch all prices simultaneously, 
+Uses httpx.AsyncClient() for non-blocking API calls, 
+Dynamically maps trading pair formats for each exchange, 
+Uses infinity_polling() for continuous bot operation, 
 The bot is designed to be lightweight and simple, while still demonstrating async programming and external API integration.
 
 ▶️ How to Run :
@@ -75,16 +75,16 @@ Then create a .env file locally and add it to .gitignore.
 
 💡 What I Practiced in This Project :
 
-Working with Telegram Bot API
-Handling multiple async API calls
-Formatting financial data
-Basic error handling
+Working with Telegram Bot API, 
+Handling multiple async API calls, 
+Formatting financial data, 
+Basic error handling, 
 Working with external REST APIs
 
 📌 Future Improvements :
 
-Add inline keyboard buttons
-Add caching system to reduce API calls
-Deploy to a VPS or cloud service
-Add logging system
+Add inline keyboard buttons, 
+Add caching system to reduce API calls, 
+Deploy to a VPS or cloud service, 
+Add logging system, 
 Add price comparison / arbitrage detection
