@@ -27,11 +27,11 @@ Response :
 
 🏦 Supported Exchanges :
 
-Nobitex
-Ramzinex
-Bitpin
-Exir
-Wallex
+Nobitex, 
+Ramzinex, 
+Bitpin, 
+Exir, 
+Wallex, 
 
 Each exchange has its own symbol format, and the bot automatically converts the symbol correctly before sending the request.
 
